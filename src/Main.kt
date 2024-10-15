@@ -184,3 +184,59 @@ fun main() {
 
 
 } // fim do main
+
+/**
+ * =============================================
+ * corretora:
+ * inter
+ * nota de corretagem:
+ * 777777
+ * data do pregão dd/mm/aaaa:
+ * 10/10/2024
+ * para o Valor Final da Nota indique Crédito (receber $) ou  Débito (vai pagar $)
+ * 'C' para crédito (vai receber $) ou 'D' para débito:
+ * c
+ * entre o Valor Final da Nota (desnecessário o sinal):
+ * 590
+ * quantos itens a lançar?
+ * 2
+ * Corretora:INTER  Nota:777777  Pregão:10/10/2024  Cred./Déb.:C  TtNota:590.0  TtNtsnl:590.0
+ * Itens:2  Compras:0.0  Vendas:0.0
+ * Tt.Bruto:0.0  Tt.Taxas:0.0  fator Tx.:0.0
+ * ============< 1 / 2 >============
+ * entre com 'C' compra ou 'V' venda:
+ * v
+ * entre com o ativo / papel negociado:
+ * hglg11
+ * entre com a quantidade negociada - inteiro:
+ * 10
+ * entre com o valor unitario - ponto decimal e não virgula - duas casas:
+ * 30.0
+ * ============< 2 / 2 >============
+ * entre com 'C' compra ou 'V' venda:
+ * v
+ * entre com o ativo / papel negociado:
+ * mxrf11
+ * entre com a quantidade negociada - inteiro:
+ * 30
+ * entre com o valor unitario - ponto decimal e não virgula - duas casas:
+ * 10.0
+ * guido prepara tBruto 600.0   ttTaxas -10.0     fatorTx -0.016666666666666666
+ * Corretora:INTER  Nota:777777  Pregão:10/10/2024  Cred./Déb.:C  TtNota:590.0  TtNtsnl:590.0
+ * Itens:2  Compras:0.0  Vendas:600.0
+ * Tt.Bruto:600.0  Tt.Taxas:-10.0  fator Tx.:-0.016666666666666666
+ * C/V: V  Papel: HGLG11  Quantidade: 10  Valor Unitário: 30.0  Corretagem Necton: 0.0  Taxa ponderada: -5.0  Preço  295.0
+ * C/V: V  Papel: MXRF11  Quantidade: 30  Valor Unitário: 10.0  Corretagem Necton: 0.0  Taxa ponderada: -5.0  Preço  295.0
+ * ==== acima esta correto ? ====
+ * ============================= taxa de cada papel: ==================v0.06=======
+ * Corretora:INTER  Nota:777777  Pregão:10/10/2024  Total c/sinal:590.0  Itens:2
+ * lin ativo    C/V  qtd  unitario  qtd X unt especifica    taxa      preço
+ *  1  HGLG11    V    10     30.00    300.00      0.00     -5.00     295.00
+ *  2  MXRF11    V    30     10.00    300.00      0.00     -5.00     295.00
+ *
+ * tot.taxas: -10.00   sumtx: -10.00   vl.liq.operac.:    590.00
+ *
+ * guido sumttlnota 590.0  ttVlFmSnl 590.0  > 0.005
+ *
+ * Process finished with exit code 0
+ */
